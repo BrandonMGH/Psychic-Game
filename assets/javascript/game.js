@@ -40,7 +40,10 @@ document.onkeyup = function (event) {
   //Run variable to insert text into HTML document on user key press. 
   var htmlText =
     '<p><h1>The Psychic Game</h1></p>' +
-    '<p>Pick a letter to see if your choice matches the computers.</p>' +
+    '<img src="assets/images/tmg-article_default_mobile.jpg" alt="Crystal Ball">'+
+    '<hr class="my-4"></hr>'+
+    '<p><b>Pick a letter.  If your choice matches that of the Psychic, you win!</b></p>' +
+    '<hr class="my-4"></hr>'+
     '<p>Wins: ' + wins + '</p>' +
     '<p>Losses: ' + losses + '</p>' +
     '<p>Guesses Left: ' + guessesRemaining + '</p>' +
