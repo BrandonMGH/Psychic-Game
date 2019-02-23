@@ -29,7 +29,7 @@ document.onkeyup = function (event) {
     guessesRemaining--;
 
   }
-  // Run if statement
+  // Run if statement if guess count falls to 0.  Add a loss to the loss variable and reset the game. 
   if (guessesRemaining == 0) {
     losses++;
     guessesRemaining = 10;
@@ -37,8 +37,8 @@ document.onkeyup = function (event) {
   }
   
 
-
-  var html =
+  //Run variable to insert text into HTML document on user key press. 
+  var htmlText =
     '<p><h1>The Psychic Game</h1></p>' +
     '<p>Pick a letter to see if your choice matches the computers.</p>' +
     '<p>Wins: ' + wins + '</p>' +
@@ -46,7 +46,7 @@ document.onkeyup = function (event) {
     '<p>Guesses Left: ' + guessesRemaining + '</p>' +
     '<p>Your Guesses: ' + guessesProvided + '</p>';
 
-  document.getElementById("game").innerHTML = html;
+  document.getElementById("game").innerHTML = htmlText;
 
 };
 
